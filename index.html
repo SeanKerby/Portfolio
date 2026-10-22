@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sean Kerby Cadavos | Portfolio</title>
+  <meta name="description" content="Portfolio of Sean Kerby Cadavos: introduction, skills, and class projects.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    // Set theme before first paint to avoid a flash of the wrong theme
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#home" aria-label="Sean Kerby Cadavos, home">SKC<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" id="themeToggle" aria-label="Switch light/dark theme">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Sean Kerby Cadavos</h1>
+          <p class="lead">
+            Age: 21-year-old
+          </p>
+          <p class="lead">Address: 3rd st. Fillena Village Tisa Cebu City</p>
+          <p class="focus">
+            <strong>Currently learning:</strong>
+            Cybersecurity & Game Development
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">View my projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/profile-formal.jpg" alt="Portrait placeholder for Sean Kerby Cadavos" width="320" height="320">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About me</h2>
+        <p>
+          I'm Sean, a 21-year-old student. I'm still early in my journey as a developer,
+          and I learn best by building projects and fixing what breaks.
+        </p>
+        <p>
+          <!-- TODO: add your school/course, hobbies, and what you want to do after graduating -->
+          4th Year Student Bachelor of Science in Information Technology Outside of class, I enjoy playing online games.
+        </p>
+        <p>
+          My goal is to keep growing my skills, finish projects I can be proud of,
+          and eventually work in a role where I can build and learn alongside a team.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section-note">An honest look at where I am right now.</p>
+        <ul class="skills">
+          <li class="skill" data-level="3">
+            <div class="skill-head"><span>HTML &amp; CSS</span><span class="level">Comfortable</span></div>
+            <div class="bar"><div></div></div>
+          </li>
+          <li class="skill" data-level="3">
+             <div class="skill-head"><span>JavaScript</span><span class="level">Comfortable</span></div>
+            <div class="bar"><div></div></div>
+          </li>
+          <li class="skill" data-level="2">
+            <div class="skill-head"><span>Machine Learning</span><span class="level">Learning</span></div>
+            <div class="bar"><div></div></div>
+          </li>
+          <li class="skill" data-level="2">
+            <div class="skill-head"><span>C#</span><span class="level">Learning</span></div>
+            <div class="bar"><div></div></div>
+          </li>
+          <li class="skill" data-level="1">
+            <div class="skill-head"><span>Network Security</span><span class="level">Beginner</span></div>
+            <div class="bar"><div></div></div>
+          </li>
+          <li class="skill" data-level="1">
+            <div class="skill-head"><span>Game Dev</span><span class="level">Beginner</span></div>
+            <div class="bar"><div></div></div>
+          </li>
+        </ul> 
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2>Certifications</h2>
+        <p class="section-note">Verified learning I've completed.</p>
+        <div class="grid certs">
+          <article class="card cert">
+            <div class="card-body">
+              <span class="cert-badge" aria-hidden="true">🎓</span>
+              <h3>Responsive Web Design</h3>
+              <p class="contrib"><strong>Issued by:</strong> freeCodeCamp</p>
+              <p>Covers HTML, CSS, Flexbox, CSS Grid, accessibility, and building responsive pages that work on any screen size.</p>
+              <a class="link" href="https://freecodecamp.org/certification/seankerbycadavos/responsive-web-design" target="_blank" rel="noopener">Verify certification →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-note">Class and practice projects.</p>
+        <!-- TODO: for each card, replace image, title, text, contribution, and link.
+             Delete the link <a> if there is no working link yet. -->
+        <div class="grid">
+          <article class="card">
+            <img src="assets/project-placeholder.svg" alt="Screenshot placeholder for Project 1" loading="lazy" width="640" height="400">
+            <div class="card-body">
+              <h3>Project 1 title</h3>
+              <p>Short explanation of what this project is and what problem it solves.</p>
+              <p class="contrib"><strong>My contribution:</strong> Describe exactly what you built or did.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+              <a class="link" href="#" target="_blank" rel="noopener">View project →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/project-placeholder.svg" alt="Screenshot placeholder for Project 2" loading="lazy" width="640" height="400">
+            <div class="card-body">
+              <h3>Project 2 title</h3>
+              <p>Short explanation of what this project is and what problem it solves.</p>
+              <p class="contrib"><strong>My contribution:</strong> Describe exactly what you built or did.</p>
+              <ul class="tags"><li>JavaScript</li></ul>
+              <a class="link" href="#" target="_blank" rel="noopener">View project →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/project-placeholder.svg" alt="Screenshot placeholder for Project 3" loading="lazy" width="640" height="400">
+            <div class="card-body">
+              <h3>Project 3 title</h3>
+              <p>Short explanation of what this project is and what problem it solves.</p>
+              <p class="contrib"><strong>My contribution:</strong> Describe exactly what you built or did.</p>
+              <ul class="tags"><li>Team project</li></ul>
+              <a class="link" href="#" target="_blank" rel="noopener">View project →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container narrow center">
+        <h2>Contact</h2>
+        <p>I'm open to feedback, collaboration, and learning opportunities. Get in touch!</p>
+      
+        <p><a class="btn btn-primary" href="mailto:cseankerby@gmail.com">Email me</a></p>
+        <p class="email-text">cseankerby@gmail.com</p>
+        <ul class="social">
+          <li><a href="https://github.com/SeanKerby " target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Sean Kerby Cadavos. HEHE</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
